@@ -1,0 +1,1347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.2 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkAdjustment" id="adjustment1">
+    <property name="lower">1</property>
+    <property name="upper">31</property>
+    <property name="value">1</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="adjustment2">
+    <property name="lower">1</property>
+    <property name="upper">12</property>
+    <property name="value">1</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkWindow" id="bookingsystem_page">
+    <property name="width_request">500</property>
+    <property name="height_request">450</property>
+    <property name="can_focus">False</property>
+    <property name="default_width">440</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="Bookingsystem_gtkfixed">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkEntry" id="theme_entry">
+            <property name="width_request">300</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="max_length">32</property>
+            <property name="placeholder_text" translatable="yes">Retro/Western/Islam/etc.</property>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">100</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="entertainment_label">
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Entertainment:</property>
+            <attributes>
+              <attribute name="weight" value="normal"/>
+              <attribute name="foreground" value="#01bf03690014"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">40</property>
+            <property name="y">150</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="entertainment_entry">
+            <property name="width_request">300</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="max_length">48</property>
+            <property name="placeholder_text" translatable="yes">Dancers, Singers, Laser shows, etc.</property>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">150</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="date_label">
+            <property name="width_request">50</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Day:</property>
+            <attributes>
+              <attribute name="weight" value="normal"/>
+              <attribute name="foreground" value="#01bf03690014"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="food_label">
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Food:</property>
+            <attributes>
+              <attribute name="weight" value="normal"/>
+              <attribute name="foreground" value="#01bf03690014"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">40</property>
+            <property name="y">250</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="food_entry">
+            <property name="width_request">300</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="max_length">32</property>
+            <property name="placeholder_text" translatable="yes">Pizza, barbecue, plov, etc.</property>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">250</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="music_label">
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Music:</property>
+            <attributes>
+              <attribute name="weight" value="normal"/>
+              <attribute name="foreground" value="#01bf03690014"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">40</property>
+            <property name="y">300</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="music_entry">
+            <property name="width_request">300</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="max_length">24</property>
+            <property name="placeholder_text" translatable="yes">Pop/Jazz/Traditional/etc.</property>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">300</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="apply_btn">
+            <property name="label" translatable="yes">Apply</property>
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_apply_btn_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">350</property>
+            <property name="y">350</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="booking_back_btn">
+            <property name="label" translatable="yes">Go back</property>
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_booking_back_btn_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">245</property>
+            <property name="y">350</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="theme_label">
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Theme:</property>
+          </object>
+          <packing>
+            <property name="x">40</property>
+            <property name="y">100</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="reservation_form_label">
+            <property name="width_request">200</property>
+            <property name="height_request">50</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Reservation Form</property>
+            <attributes>
+              <attribute name="scale" value="2"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">25</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="day_entry">
+            <property name="width_request">50</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="max_length">2</property>
+            <property name="max_width_chars">2</property>
+            <property name="input_purpose">digits</property>
+            <property name="adjustment">adjustment1</property>
+            <property name="climb_rate">1</property>
+            <property name="numeric">True</property>
+            <property name="update_policy">if-valid</property>
+            <property name="value">1</property>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="month_entry">
+            <property name="width_request">50</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="max_length">2</property>
+            <property name="max_width_chars">2</property>
+            <property name="input_purpose">digits</property>
+            <property name="adjustment">adjustment2</property>
+            <property name="climb_rate">1</property>
+            <property name="numeric">True</property>
+            <property name="update_policy">if-valid</property>
+            <property name="value">1</property>
+          </object>
+          <packing>
+            <property name="x">330</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width_request">60</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Month:</property>
+            <attributes>
+              <attribute name="weight" value="normal"/>
+              <attribute name="foreground" value="#01bf03690014"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">270</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="admin_authorization_page">
+    <property name="width_request">500</property>
+    <property name="height_request">400</property>
+    <property name="can_focus">False</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="admin_authorization_page_gtkfixed">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel" id="login_as_admin_label">
+            <property name="width_request">250</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Login as an Admin</property>
+            <attributes>
+              <attribute name="weight" value="normal"/>
+              <attribute name="scale" value="2"/>
+              <attribute name="foreground" value="#000000000000"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">130</property>
+            <property name="y">60</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="admin_password_entry">
+            <property name="width_request">250</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="visibility">False</property>
+            <property name="invisible_char">•</property>
+            <property name="input_purpose">password</property>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="admin_login_btn">
+            <property name="label" translatable="yes">Log in</property>
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_admin_login_btn_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">300</property>
+            <property name="y">250</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="admin_auth_back_btn">
+            <property name="label" translatable="yes">Go back</property>
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_admin_auth_back_btn_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">195</property>
+            <property name="y">250</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">password:</property>
+          </object>
+          <packing>
+            <property name="x">45</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="admin_pas_val_label">
+            <property name="width_request">300</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <attributes>
+              <attribute name="foreground" value="#efef29292929"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">154</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="admin_cancel_reserv_page">
+    <property name="width_request">650</property>
+    <property name="height_request">450</property>
+    <property name="can_focus">False</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="admin_cancel_reserv_fixed">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel" id="admin_cancel_label">
+            <property name="width_request">400</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Type id of reservation you want to cancel:</property>
+            <attributes>
+              <attribute name="scale" value="1.3"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">35</property>
+            <property name="y">95</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="admin_cancel_content_label">
+            <property name="width_request">1120</property>
+            <property name="height_request">56</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <attributes>
+              <attribute name="scale" value="1.5"/>
+              <attribute name="background" value="#ffffffffffff"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">205</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="admin_cancel_title_label">
+            <property name="width_request">600</property>
+            <property name="height_request">46</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">id	user_name		Theme		Entertainment		Day Month	Food			Music			
+	.				.			.					.	.		.				.				</property>
+            <attributes>
+              <attribute name="scale" value="1.5"/>
+              <attribute name="background" value="#ffffffffffff"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">47</property>
+            <property name="y">150</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="admin_cancel_back_btn">
+            <property name="label" translatable="yes">Go back</property>
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_admin_cancel_back_btn_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">1040</property>
+            <property name="y">95</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="admin_cancel_entry">
+            <property name="width_request">400</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+          </object>
+          <packing>
+            <property name="x">470</property>
+            <property name="y">95</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="admin_cancel_reserv_by_id_btn">
+            <property name="label" translatable="yes">Cancel Reservation</property>
+            <property name="width_request">110</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_admin_cancel_reserv_by_id_btn_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">870</property>
+            <property name="y">95</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="cancel_reservation_top_titile_label">
+            <property name="width_request">300</property>
+            <property name="height_request">50</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Cancel a Reservation</property>
+            <attributes>
+              <attribute name="scale" value="2"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">450</property>
+            <property name="y">30</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="admin_menu_page">
+    <property name="width_request">500</property>
+    <property name="height_request">400</property>
+    <property name="can_focus">False</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="admin_menu_gtkfixed">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkButton" id="admin_cancel_reservation_btn">
+            <property name="label" translatable="yes">     Cancel a reservation  </property>
+            <property name="width_request">200</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_admin_cancel_reservation_btn_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="admin_show_reservations_btn">
+            <property name="label" translatable="yes">    Show all reservations</property>
+            <property name="width_request">200</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_admin_show_reservations_btn_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">250</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="admin_menu_label">
+            <property name="width_request">300</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Admin Menu</property>
+            <attributes>
+              <attribute name="weight" value="normal"/>
+              <attribute name="scale" value="2"/>
+              <attribute name="foreground" value="#000000000000"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">60</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="admin_menu_back_btn">
+            <property name="label" translatable="yes">Go back</property>
+            <property name="width_request">200</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_admin_menu_back_btn_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">300</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="admin_reservations_page">
+    <property name="width_request">650</property>
+    <property name="height_request">450</property>
+    <property name="can_focus">False</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="admin_reservations_fixed">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel" id="admin_reservations_label">
+            <property name="width_request">300</property>
+            <property name="height_request">50</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">User Reservations</property>
+            <attributes>
+              <attribute name="scale" value="2"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">450</property>
+            <property name="y">17</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="admin_reservations_content_label">
+            <property name="width_request">1130</property>
+            <property name="height_request">56</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <attributes>
+              <attribute name="scale" value="1.5"/>
+              <attribute name="background" value="#f3f3f3f3f3f3"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">137</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="admin_reservations_title_label">
+            <property name="width_request">600</property>
+            <property name="height_request">46</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">id	user_name		Theme		Entertainment		Day Month	Food			Music			
+	.				.			.					.	.		.				.				</property>
+            <attributes>
+              <attribute name="scale" value="1.5"/>
+              <attribute name="background" value="#f3f3f3f3f3f3"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">41</property>
+            <property name="y">90</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="admin_reservations_back_btn">
+            <property name="label" translatable="yes">Go back</property>
+            <property name="width_request">100</property>
+            <property name="height_request">45</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_admin_reservations_back_btn_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">1040</property>
+            <property name="y">40</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkEntryCompletion" id="entrycompletion1"/>
+  <object class="GtkListStore" id="liststore1"/>
+  <object class="GtkListStore" id="liststore2"/>
+  <object class="GtkWindow" id="user_authorization_page">
+    <property name="width_request">500</property>
+    <property name="height_request">400</property>
+    <property name="can_focus">False</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="user_authorization_page_gtkfixed">
+        <property name="width_request">485</property>
+        <property name="height_request">400</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel" id="welcome_customer_authorization_label">
+            <property name="width_request">300</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Log in or Register</property>
+            <attributes>
+              <attribute name="weight" value="normal"/>
+              <attribute name="scale" value="2"/>
+              <attribute name="foreground" value="#000000000000"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">60</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="user_login_btn">
+            <property name="label" translatable="yes">Log in</property>
+            <property name="width_request">200</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_user_login_btn_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="user_register_btn">
+            <property name="label" translatable="yes">Register</property>
+            <property name="width_request">200</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_user_register_btn_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">250</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="user_auth_back_btn">
+            <property name="label" translatable="yes">Go back</property>
+            <property name="width_request">200</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_user_auth_back_btn_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">300</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="user_cancel_reserv_page">
+    <property name="width_request">650</property>
+    <property name="height_request">450</property>
+    <property name="can_focus">False</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="user_cancel_reserv_fixed">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel" id="user_cancel_label">
+            <property name="width_request">400</property>
+            <property name="height_request">50</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Type id of reservation you want to cancel:</property>
+            <attributes>
+              <attribute name="scale" value="1.3"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="y">90</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="user_cancel_content_label">
+            <property name="width_request">1000</property>
+            <property name="height_request">56</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <attributes>
+              <attribute name="scale" value="1.5"/>
+              <attribute name="background" value="#d3d3d7d7cfcf"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">205</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="user_cancel_title_label">
+            <property name="width_request">600</property>
+            <property name="height_request">46</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Theme		Entertainment		Day Month	Food			Music			
+.			.					.	.		.				.				</property>
+            <attributes>
+              <attribute name="scale" value="1.5"/>
+              <attribute name="background" value="#d3d3d7d7cfcf"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">150</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="user_cancel_back_btn">
+            <property name="label" translatable="yes">Go back</property>
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_user_cancel_back_btn_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">915</property>
+            <property name="y">95</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="user_cancel_entry">
+            <property name="width_request">350</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+          </object>
+          <packing>
+            <property name="x">400</property>
+            <property name="y">95</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="user_cancel_reservation_btn">
+            <property name="label" translatable="yes">Cancel Reservation</property>
+            <property name="width_request">110</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_user_cancel_reservation_btn_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">751</property>
+            <property name="y">95</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="user_login_page">
+    <property name="width_request">500</property>
+    <property name="can_focus">False</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="user_login_page_gtkfixed">
+        <property name="width_request">485</property>
+        <property name="height_request">480</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel" id="user_login_label">
+            <property name="width_request">200</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">User Login</property>
+            <attributes>
+              <attribute name="weight" value="normal"/>
+              <attribute name="scale" value="2"/>
+              <attribute name="foreground" value="#000000000000"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">60</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="user_loginusername_label">
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">username:</property>
+          </object>
+          <packing>
+            <property name="x">50</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="user_loginusername_entry">
+            <property name="width_request">250</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="max_length">8</property>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="user_loginpassword_label">
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">password:</property>
+          </object>
+          <packing>
+            <property name="x">50</property>
+            <property name="y">250</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="user_loginpassword_entry">
+            <property name="width_request">250</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="max_length">8</property>
+            <property name="visibility">False</property>
+            <property name="invisible_char">•</property>
+            <property name="input_purpose">password</property>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">250</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="user_login_in_login_page_btn">
+            <property name="label" translatable="yes">Log in</property>
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_user_login_in_login_page_btn_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">300</property>
+            <property name="y">300</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="user_login_back_btn">
+            <property name="label" translatable="yes">Go back</property>
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_user_login_back_btn_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">195</property>
+            <property name="y">300</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="user_login_val_label">
+            <property name="width_request">250</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <attributes>
+              <attribute name="foreground" value="#efef29292929"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">150</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="user_menu_page">
+    <property name="width_request">480</property>
+    <property name="height_request">415</property>
+    <property name="can_focus">False</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="user_menu_gtkfixed">
+        <property name="width_request">500</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkButton" id="new_reservation_btn">
+            <property name="label" translatable="yes">Make a new reservation</property>
+            <property name="width_request">200</property>
+            <property name="height_request">45</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_new_reservation_btn_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">150</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="cancel_reservation_btn">
+            <property name="label" translatable="yes">     Cancel a reservation  </property>
+            <property name="width_request">200</property>
+            <property name="height_request">45</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_cancel_reservation_btn_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="show_reservations_btn">
+            <property name="label" translatable="yes">    Show my reservations</property>
+            <property name="width_request">200</property>
+            <property name="height_request">45</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_show_reservations_btn_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">250</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="user_menu_label">
+            <property name="width_request">300</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">User Menu</property>
+            <attributes>
+              <attribute name="weight" value="normal"/>
+              <attribute name="scale" value="2"/>
+              <attribute name="foreground" value="#000000000000"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">35</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="user_menu_back_btn">
+            <property name="label" translatable="yes">Go back</property>
+            <property name="width_request">200</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_user_menu_back_btn_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">300</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="user_register_page">
+    <property name="width_request">480</property>
+    <property name="height_request">485</property>
+    <property name="can_focus">False</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="user_register_page_gtkfixed">
+        <property name="width_request">500</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel" id="user_register_label">
+            <property name="width_request">300</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">User Registration</property>
+            <attributes>
+              <attribute name="weight" value="normal"/>
+              <attribute name="scale" value="2"/>
+              <attribute name="foreground" value="#01bf03690014"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">32</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="user_registerusername_label">
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Create username:</property>
+          </object>
+          <packing>
+            <property name="x">40</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="user_registerusername_entry">
+            <property name="width_request">250</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+          </object>
+          <packing>
+            <property name="x">180</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="user_registerpassword_label">
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Create password:</property>
+          </object>
+          <packing>
+            <property name="x">40</property>
+            <property name="y">250</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="user_registerpassword_entry">
+            <property name="width_request">250</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="visibility">False</property>
+            <property name="invisible_char">•</property>
+            <property name="input_purpose">password</property>
+          </object>
+          <packing>
+            <property name="x">180</property>
+            <property name="y">250</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="user_register_in_register_page_btn">
+            <property name="label" translatable="yes">Register</property>
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_user_register_in_register_page_btn_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">330</property>
+            <property name="y">300</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="user_register_back_btn">
+            <property name="label" translatable="yes">Go back</property>
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_user_register_back_btn_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">225</property>
+            <property name="y">300</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="user_reservations_page">
+    <property name="width_request">650</property>
+    <property name="height_request">450</property>
+    <property name="can_focus">False</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="user_reservations_fixed">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel" id="user_reservations_label">
+            <property name="width_request">300</property>
+            <property name="height_request">50</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">User Reservations</property>
+            <attributes>
+              <attribute name="scale" value="2"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">400</property>
+            <property name="y">17</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="user_reservations_content_label">
+            <property name="width_request">770</property>
+            <property name="height_request">56</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <attributes>
+              <attribute name="scale" value="1.5"/>
+              <attribute name="background" value="#ffffffffffff"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">137</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="user_reservations_title_label">
+            <property name="width_request">600</property>
+            <property name="height_request">46</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Theme		Entertainment		Day Month	Food			Music			
+.			.					.	.		.				.				</property>
+            <attributes>
+              <attribute name="scale" value="1.5"/>
+              <attribute name="background" value="#ffffffffffff"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">90</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="user_reservations_back_btn">
+            <property name="label" translatable="yes">Go back</property>
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_user_reservations_back_btn_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">910</property>
+            <property name="y">50</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="welcome_page">
+    <property name="width_request">500</property>
+    <property name="height_request">400</property>
+    <property name="can_focus">False</property>
+    <child type="titlebar">
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed" id="Registration_page_gtkfixed">
+        <property name="width_request">500</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel" id="welcome_registration_label">
+            <property name="width_request">300</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Marriage Function Hall 
+	Booking System</property>
+            <attributes>
+              <attribute name="weight" value="bold"/>
+              <attribute name="scale" value="2"/>
+              <attribute name="foreground" value="#000000000000"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">20</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="user_btn">
+            <property name="label" translatable="yes">User</property>
+            <property name="width_request">200</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_user_btn_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">200</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="admin_btn">
+            <property name="label" translatable="yes">Admin</property>
+            <property name="width_request">200</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_admin_btn_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">150</property>
+            <property name="y">250</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="rolemenu_label">
+            <property name="width_request">100</property>
+            <property name="height_request">50</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Enter as:</property>
+            <attributes>
+              <attribute name="weight" value="semibold"/>
+              <attribute name="scale" value="1.2"/>
+              <attribute name="foreground" value="#2e2e34343636"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">200</property>
+            <property name="y">140</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

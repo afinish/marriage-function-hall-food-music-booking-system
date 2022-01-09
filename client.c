@@ -147,15 +147,11 @@ int main(int argc, char *argv[]) {
 	
 	////////////////////////////////////////////////////////////////////////////////////////////
 
-
-	
-	
 	////////////////////////////////////////////////////////////////////////////////////////////
 	////////////////////////////////////////////////////////////////////////////////////////////
 	//----------------------------------------------------------------------------------------//
 	////////////////////////////////////////////////////////////////////////////////////////////
 	////////////////////////////////////////////////////////////////////////////////////////////
-	
 	
 	gtk_init(&argc, &argv);
 	
@@ -329,8 +325,7 @@ int main(int argc, char *argv[]) {
 	
 	return EXIT_SUCCESS;
 	}
-	
-	
+
 	// x Welcome page 
 	// x Admin Auth page
 	// x User Auth page
@@ -344,11 +339,10 @@ int main(int argc, char *argv[]) {
 	// x Admin Reservations page btns
 	// x Admin Reservations Cancel page
 	
-	
 	////////////////////////////////////////////////////////////////////////////////////////////
 	/* ===== Welcome Page functions ========================================================= */
 	////////////////////////////////////////////////////////////////////////////////////////////
-void on_user_btn_clicked (GtkButton *b) {
+	void on_user_btn_clicked (GtkButton *b) {
 	gtk_widget_hide(welcome_page);
 	
 	gtk_widget_show(user_authorization_page);
@@ -375,8 +369,6 @@ void on_admin_login_btn_clicked (GtkButton *b) {
 	} else {
 		gtk_label_set_text(GTK_LABEL(admin_pas_val_label), (const gchar*) "Wrong password!!!");
 	}
-	
-	
 }
 
 void on_admin_auth_back_btn_clicked (GtkButton *b) {
@@ -445,7 +437,6 @@ void on_user_login_in_login_page_btn_clicked (GtkButton *b) {
 	
 			gtk_widget_show(user_menu_page);
 		}
-		
 		memset(buffer, 0, sizeof(buffer));
 		//strcmp("Right", buffer);	
 	//}while(i == 0);
@@ -506,15 +497,12 @@ void on_admin_menu_back_btn_clicked (GtkButton *b) {
 	/* ===== User Menu Page ================================================================= */
 	////////////////////////////////////////////////////////////////////////////////////////////
 void on_new_reservation_btn_clicked (GtkButton *b) {
-	
-
 	gtk_widget_hide(user_menu_page);
 	
 	gtk_widget_show(bookingsystem_page);
 }	
 	
 void on_cancel_reservation_btn_clicked (GtkButton *b) {
-	
 	char queryUserReservations[100] = "queryUserReservations/";
 	strcat(queryUserReservations, user_name_cookie);
 	strcat(queryUserReservations, "/");
@@ -546,7 +534,6 @@ void on_show_reservations_btn_clicked (GtkButton *b) {
 	
 	memset(buffer, 0, 1024);
 	valread = read(sock, buffer, 1024);
-	
 	
 	printf("\nBuffer=%s", buffer);
 	gtk_label_set_text(GTK_LABEL(user_reservations_content_label), buffer);
@@ -685,8 +672,6 @@ void on_user_cancel_reservation_btn_clicked (GtkButton *b) {
 	printf("%s\n", queryUserCancelReserv);
 	
 	send(sock, queryUserCancelReserv, strlen(queryUserCancelReserv), 0);
-	
-	
 }
 
 void on_user_cancel_back_btn_clicked (GtkButton *b) {

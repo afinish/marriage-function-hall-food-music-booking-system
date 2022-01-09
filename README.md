@@ -1,5 +1,5 @@
 # marriage-function-hall-food-music-booking-system
-## Note: The project is not 100% complete. Too lazy to fix the buggs :)
+## Note: The project is not 100% complete. Code is pretty garbage too, but it works. After all, it was done in 3 days with no sleep :)
 
 #TODO
 - [ ] Clean up the code
